@@ -9,6 +9,9 @@
 body{
     max-width: 1920px;
 }
+.container-fluid{
+    padding: 0;
+}
 ul,ol{
     list-style: none;
 }
@@ -43,14 +46,21 @@ header p{
 }
 .search svg{
    margin: auto 6px;
+   color: #ccc;
+}
+.input_search{
+    margin: 3px;
+    border-radius: 10px;
+}
+.bi-search:hover{
+    color: #a00;
+}
+.bi-search:hover~.input_search{
+   display: none;
 }
 .register a{
     color: #a3a3a3;
 }
-.register a:hover{
-    color: #ffffff;
-}
-
 .login{
     border: 1px solid gray;
 }
@@ -92,35 +102,44 @@ header p{
     background: #ECECE7;
 }
 
-.carousel-item{
-    display: flex;
-}
-.carousel-caption{
-    position: relative;
-    right: auto;
-    left: auto;
-    bottom: auto;
-    text-align: start;
-    color: #000;
-    
-}
-
 .slide{
-    width: 100%;
-}
-.carousel-inner{
-    display: flex;
-    position: relative;
-}
-.xxx{
-    background: #a00;
-    
+    width: 80%;
+    margin: auto;
 }
 .ttt{
     position: absolute;
     top: 0;
-    right: 0;
+    left: 50%;
+    text-align: left;
+    padding: 5em;
+    background: #cccccc;
+}
+.sss{
+    width: 20%;
+}
+.carousel-caption h5,.carousel-caption p{
+    margin: 3px;
+}
+.carousel-item{
+    position: relative;
     
+}
+.carousel_icon{
+    display: flex;
+}
+.carousel_icon .bi{
+    background: #FAFAF9;
+    padding: 6px;
+}
+
+.carousel-indicators li {
+    width: 20%;
+    margin: .5em;
+}
+.carousel-indicators{
+    background: #000;
+    width: 100%;
+    margin: auto;
 }
 
 .banner{
