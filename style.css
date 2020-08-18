@@ -104,6 +104,25 @@ header p{
     color: #000;
     
 }
+
+.slide{
+    width: 100%;
+}
+.carousel-inner{
+    display: flex;
+    position: relative;
+}
+.xxx{
+    background: #a00;
+    
+}
+.ttt{
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+
 .banner{
     background: #000;
     width: 100%;
