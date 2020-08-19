@@ -44,6 +44,10 @@ header p{
     color: #3C7260;
     font-weight: bolder;
 }
+.search:hover .input_search{
+    width: 100px;
+    transition: width 1s ease-in-out;
+}
 .search svg{
    margin: auto 6px;
    color: #ccc;
@@ -51,12 +55,13 @@ header p{
 .input_search{
     margin: 3px;
     border-radius: 10px;
+    width: 0px;
 }
 .bi-search:hover{
     color: #a00;
 }
-.bi-search:hover~.input_search{
-   display: none;
+.input_search:focus{
+    width: 100px;
 }
 .register a{
     color: #a3a3a3;
